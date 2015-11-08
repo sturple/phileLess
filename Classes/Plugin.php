@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Class
+* Plugin Class PhileLess
 */
 namespace Phile\Plugin\Sturple\PhileLess;
 
