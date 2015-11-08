@@ -1,0 +1,21 @@
+{
+  "name": "sturple/phileLess",
+  "type": "phile-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Adds support for the LESS CSS pre-processor to Phile",
+  "homepage": "http://github.com/sturple/",
+  "keywords": ["cms","phile","content","LESS","CSS"],
+  "authors": [
+      {
+      "name": "Shawn Turple",
+      "email": "shawn@turple.ca",
+      "homepage": "http://github.com/sturple/",
+      "role": "Developer"
+      }
+  ],
+  "require": {
+    "phile-cms/phile": ">=1",
+    "leafo/lessphp": "dev-master"
+    }
+}
