@@ -1,10 +1,10 @@
 {
-  "name": "sturple/phileLess",
+  "name": "sturple/phile-less",
   "type": "phile-plugin",
   "version": "1.0.0",
   "license": "MIT",
   "description": "Adds support for the LESS CSS pre-processor to Phile",
-  "homepage": "http://github.com/sturple/",
+  "homepage": "http://github.com/sturple/phileLess",
   "keywords": ["cms","phile","content","LESS","CSS"],
   "authors": [
       {
