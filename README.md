@@ -41,14 +41,14 @@ array(
 | Option | Values | Description |
 | ------ | ------- | ----------- |
 | formatter | {**lessjs** \| compressed \| classic} | See [documentation](http://leafo.net/lessphp/docs/#php_interface)  |
-| comments | {true \| **false**} Leave Comments  |
+| comments | {true \| **false**} | Leave Comments   |
 | inputFile | Path and File| Relative Path to the **Current Theme** |
 | outputFile| Path and File| Relative Path to the **Current Theme** |
 
 ## Runtime Errors
-```
+
 * there is no input file.
 * there is an error in your css code.
 * the output directory is not writable.
-```
+
 
