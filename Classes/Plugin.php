@@ -36,7 +36,10 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 	
 	protected function onConfigLoaded(array $eventData)
 	{
-		// create new instance of 
+		// get current theme directory
+		$dir = THEMES_DIR . $eventData['config']['theme'] .'/';
+		
+		// create new instance of less
 		$this->less = new \lessc;
 		
 		//enable comments or not		
@@ -44,8 +47,8 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 		$comments = ($this->settings['comments'] === true) ? true : false;
 		$this->less->setPreserveComments($comments);
 		
-		// setting input file and setting up cache file
-		$inputFile = $this->settings['inputFile'];
+		// setting input file and setting up cache file		
+		$inputFile = $dir . $this->settings['inputFile'];
 		$cacheFile = $inputFile.".cache";
 		
 		if (!file_exists($inputFile))
@@ -55,7 +58,7 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 			);
 		}				
 		// outupt file
-		$outputFile = $this->settings['outputFile'];
+		$outputFile = $dir . $this->settings['outputFile'];
 		
 		//setting the formatter comparing to insure it is a valid choice.
 		if (in_array($this->settings['formatter'],  array('lessjs','compressed','classic'))){
@@ -83,8 +86,7 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 		
 		
 		// update files if cache has changed
-		if (!is_array($cache) || $newCache["updated"] > $cache["updated"]) {
-			
+		if (!is_array($cache) || $newCache["updated"] > $cache["updated"]) {			
 			if (!file_put_contents($cacheFile, serialize($newCache))){
 				throw new \RuntimeException (
 					"Could not write to cache file {$cacheFile}.", 3472002
@@ -94,12 +96,7 @@ class Plugin extends \Phile\Plugin\AbstractPlugin implements \Phile\Gateway\Even
 				throw new \RuntimeException (
 					"Could not write to output file {$outputFile}.", 3472002
 				);
-			}
-			
+			}			
 		}	
 	}
-
-	
-
-
 }
