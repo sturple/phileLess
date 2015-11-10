@@ -40,8 +40,8 @@ array(
 
 | Option | Values | Description |
 | ------ | ------- | ----------- |
-| formatter | {**lessjs** | compressed | classic} | See [documentation](http://leafo.net/lessphp/docs/#php_interface)  |
-| comments | {true|**false**} Leave Comments  |
+| formatter | {**lessjs** \| compressed \| classic} | See [documentation](http://leafo.net/lessphp/docs/#php_interface)  |
+| comments | {true \| **false**} Leave Comments  |
 | inputFile | Path and File| Relative Path to the **Current Theme** |
 | outputFile| Path and File| Relative Path to the **Current Theme** |
 
