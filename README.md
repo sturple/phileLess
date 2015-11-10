@@ -17,7 +17,7 @@ php composer.phar require sturple/phile-less:dev-master
 ### Download
 ```
 * Install [Phile](https://github.com/PhileCMS/Phile)
-* Clone this https://github.com/sturple/phileLess repo into `plugins/sturple/phileLess/````
+* Clone this https://github.com/sturple/phileLess repo into `plugins/sturple/phileLess/
 ```
 
 ## Usage
