@@ -30,8 +30,8 @@ array(
 	'active'			=>false,
 	'formatter' 		=> 'lessjs', 
 	'comments'			=> false,
-	'inputFile' 		=> 'css/style.less',
-	'outputFile' 		=> 'css/style.css',		
+	'inputFile' 		=> 'assets/css/style.less',
+	'outputFile' 		=> 'assets/css/style.css',		
 );
 
 ```
