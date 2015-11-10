@@ -1,8 +1,13 @@
 <?php
 /**
  * config file
+ * see http://leafo.net/lessphp/docs/#compiling
  */
-// some default settings for the parser
-return array(
-  'compress' => false
+/* lessjs, compressed, classic */
+return array(	
+	'active'			=>false,
+	'formatter' 		=> 'lessjs', 
+	'comments'			=> false,
+	'inputFile' 		=> '/var/www/html/Phile/phile/themes/default/css/style.less',
+	'outputFile' 		=> '/var/www/html/Phile/phile/themes/default/css/style2.css',	
 );
